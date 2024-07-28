@@ -11,10 +11,10 @@ public class Greeter {
     this.name = name;
   }
 
-  public String sayHello() {
+ public String sayHello() {
     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
-    return messages.getString("greeting") + ", " + name.substring(0, 1).toUpperCase() + name.substring(1);
-  }
+    return messages.getString("greeting") + ", **" + name +.substring(0, 1).toUpperCase() + name.substring(1) + "**";
+}
 
   public static void main(String[] args) {
     if (args.length < 3) {
